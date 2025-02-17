@@ -1,0 +1,107 @@
+@import "../../app/mixins.module.scss";
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 90px;
+  color: white;
+  z-index: 2;
+  border-bottom: 1px solid var(--neutral-lg);
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 280px;
+
+  @include screen-size(mobile) {
+    display: none;
+    margin-left: 0;
+  }
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.list_item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+
+  // &:hover::after {
+  //   opacity: 1;
+  // }
+  //   &::after {
+  //     position: absolute;
+  //     bottom: -1px;
+  //     opacity: 0;
+  //     content: '';
+  //     height: 5px;
+  //     width: 100%;
+  //     background-color: var(--accent-mb);
+  //     transition: all 250ms;
+
+  // }
+
+}
+
+.link {
+  color: var(--main-txt);
+  font-weight: 500;
+  transition: color 200ms;
+
+  &:hover {
+    color: var(--accent-mb);
+  }
+}
+
+.link_active {
+  @extend .link;
+  color: var(--accent-mb);
+}
+
+.icon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 250ms;
+  &:hover {
+    fill: var(--accent-mb);
+  }
+
+  @include screen-size(mobile) {
+    display: flex;
+  }
+}
+
+.list_social {
+  display: flex;
+  align-items: center;
+}
+
+.social_item {
+  height: 100%;
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+

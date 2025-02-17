@@ -1,0 +1,27 @@
+.btn {
+  position: relative;
+  padding: 12px 20px;
+  z-index: 2;
+  //   background-color: var(--back-col-blue);
+  background: #fc466b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3f5efb,
+    #fc466b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3f5efb,
+    #fc466b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 4px;
+  border: transparent;
+  font-family: inherit;
+  color: white;
+  cursor: pointer;
+  transition: opacity 300ms;
+  &:hover {
+    opacity: 0.8;
+  }
+}
