@@ -23,7 +23,7 @@ export default function Home() {
                 <h1 className={s.quote}>
                   Wisdom comes from experience and commitment
                 </h1>
-                <Button>ABOUT ME</Button>
+                <Button>GET TO KNOW ME</Button>
               </div>
               <div className={s.image}></div>
             </div>

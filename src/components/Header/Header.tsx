@@ -9,7 +9,9 @@ import { useState } from "react";
 
 import Container from "../Container/Container";
 import MobileMenu from "../MobileMenu/MobileMenu";
+import SocialMediaLink from "../ui/SocialMediaLink/SocialMediaLink";
 import { Icons } from "../ui/icons/icons";
+
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
@@ -34,8 +36,9 @@ const Header: React.FC = () => {
             /> 
           </Link> */}
           <ul className={s.list_social}>
-            <li className={s.social_item}><Icons.IconInstagram/></li>
-            <li className={s.social_item}><Icons.IconTwitter/></li>
+            <li className={s.social_item}><SocialMediaLink href="" icon={<Icons.IconInstagram/>}/></li>
+            <li className={s.social_item}><SocialMediaLink href="" icon={<Icons.IconTwitter/>}/></li>
+            <li className={s.social_item}><SocialMediaLink href="" icon={<Icons.IconLinkedin/>}/></li>
            
           </ul>
           <nav className={s.nav}>

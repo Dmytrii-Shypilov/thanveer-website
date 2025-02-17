@@ -3,6 +3,7 @@ import {  DM_Serif_Text, } from "next/font/google";
 import "./globals.scss";
 
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const serifText = DM_Serif_Text({
  weight: ['400'],
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={serifText.className}>
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
