@@ -21,36 +21,37 @@ const Header: React.FC = () => {
     return path === href ? s.link_active : s.link;
   };
 
+  const isHomePage = path === "/";
+
   return (
     <header className={s.header}>
       <Container>
         <div className={s.wrapper}>
-          {/* <Link href="/">
-             <Image
-              width={112}
-              height={40}
-              alt="mcs-logo"
-              src="/images/mcs-logo.webp"
-              priority={true}
-            /> 
-          </Link> */}
-          <ul className={s.list_social}>
-            <li className={s.social_item}>
-              <a className={s.social_link} href="">
-                <Icons.IconInstagram />
-              </a>
-            </li>
-            <li className={s.social_item}>
-              <a className={s.social_link} href="">
-                <Icons.IconTwitter />
-              </a>
-            </li>
-            <li className={s.social_item}>
-              <a className={s.social_link} href="">
-                <Icons.IconLinkedin />
-              </a>
-            </li>
-          </ul>
+          <div className={s.social_header}>
+            {!isHomePage && (
+              <Link href="/" className={s.logo}>
+                THANVEER UMMER
+              </Link>
+            )}
+            <ul className={s.list_social}>
+              <li className={s.social_item}>
+                <a className={s.social_link} href="">
+                  <Icons.IconInstagram />
+                </a>
+              </li>
+              <li className={s.social_item}>
+                <a className={s.social_link} href="">
+                  <Icons.IconTwitter />
+                </a>
+              </li>
+              <li className={s.social_item}>
+                <a className={s.social_link} href="">
+                  <Icons.IconLinkedin />
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <nav className={s.nav}>
             <ul className={s.list}>
               <li className={s.list_item}>

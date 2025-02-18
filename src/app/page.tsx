@@ -1,8 +1,11 @@
 import s from "./page.module.scss";
 import Container from "@/components/Container/Container";
-import Button from "@/components/ui/Button/Button";
+import Link from "next/link";
+
 
 export default function Home() {
+
+
   return (
     <div className={s.page}>
       <main className={s.main}>
@@ -23,7 +26,7 @@ export default function Home() {
                 <h1 className={s.quote}>
                   Wisdom comes from experience and commitment
                 </h1>
-                <Button>GET TO KNOW ME</Button>
+                <Link className={s.link_btn} href='/about'>GET TO KNOW ME</Link>
               </div>
               <div className={s.image}></div>
             </div>

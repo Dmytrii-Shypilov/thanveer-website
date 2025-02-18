@@ -19,6 +19,21 @@
   
 }
 
+.social_header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 35px;
+  font-size: 20px;
+  color: var(--golden);
+  transition: opacity 250ms;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .nav {
   height: 100%;
   display: flex;
