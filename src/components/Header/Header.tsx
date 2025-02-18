@@ -9,7 +9,6 @@ import { useState } from "react";
 
 import Container from "../Container/Container";
 import MobileMenu from "../MobileMenu/MobileMenu";
-import SocialMediaLink from "../ui/SocialMediaLink/SocialMediaLink";
 import { Icons } from "../ui/icons/icons";
 
 const Header: React.FC = () => {
@@ -36,26 +35,37 @@ const Header: React.FC = () => {
             /> 
           </Link> */}
           <ul className={s.list_social}>
-            <li className={s.social_item}><SocialMediaLink href="" icon={<Icons.IconInstagram/>}/></li>
-            <li className={s.social_item}><SocialMediaLink href="" icon={<Icons.IconTwitter/>}/></li>
-            <li className={s.social_item}><SocialMediaLink href="" icon={<Icons.IconLinkedin/>}/></li>
-           
+            <li className={s.social_item}>
+              <a className={s.social_link} href="">
+                <Icons.IconInstagram />
+              </a>
+            </li>
+            <li className={s.social_item}>
+              <a className={s.social_link} href="">
+                <Icons.IconTwitter />
+              </a>
+            </li>
+            <li className={s.social_item}>
+              <a className={s.social_link} href="">
+                <Icons.IconLinkedin />
+              </a>
+            </li>
           </ul>
           <nav className={s.nav}>
             <ul className={s.list}>
               <li className={s.list_item}>
-                <Link className={getClass("/")} href="/">
+                <Link className={getClass("/about")} href="/about">
                   About me
                 </Link>
               </li>
               <li className={s.list_item}>
-                <Link className={getClass("/business")} href="/business">
+                <Link className={getClass("/gallery")} href="/gallery">
                   Gallery
                 </Link>
               </li>
               <li className={s.list_item}>
-                <Link className={getClass("/contact")} href="/contact">
-                  Companies
+                <Link className={getClass("/business")} href="/business">
+                  Business
                 </Link>
               </li>
             </ul>
@@ -65,13 +75,12 @@ const Header: React.FC = () => {
           </span>
         </div>
       </Container>
-        <MobileMenu
+      <MobileMenu
         path={path}
-          isMenuOpen={isMenuOpen}
-          closeMenu={() => setIsMenuOpen(false)}
-          router={router}
-        />
-     
+        isMenuOpen={isMenuOpen}
+        closeMenu={() => setIsMenuOpen(false)}
+        router={router}
+      />
     </header>
   );
 };

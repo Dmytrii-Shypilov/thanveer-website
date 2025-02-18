@@ -1,5 +1,121 @@
 .footer {
     width: 100%;
-    height: 250px;
-    background-color: #FFF5EE;
+    height: 220px;
+    padding: 40px 0px;
+    font-family: var(--roboto);
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
+.wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin-right: 35px;
+    color: var(--txt-col-light)
+}
+
+.list_social {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social_item {
+    height: 100%;
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+  
+  .social_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--prime-gb);
+    border-radius: 50%;
+  
+  
+    &:hover { 
+      svg {
+        fill: var(--golden);
+      }
+    }
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    margin-left: 280px;
+
+    // @include screen-size(mobile) {
+    //   display: none;
+    //   margin-left: 0;
+    // }
+  }
+  
+  .list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .list_item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    &:not(:last-of-type) {
+      margin-right: 50px;
+    }
+  }
+
+
+  .link {
+    color: var(--txt-col-light);
+    font-weight: 500;
+    transition: color 200ms;
+  
+    &:hover {
+      color: var(--golden);
+    }
+  }
+  
+  .link_active {
+    @extend .link;
+    color: var(--golden);
+  }
+  
+.credentials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  .signature {
+    font-size: 55px;
+    color: var(--golden);
+    font-family: var(--culpa);
+  }
+
+  .copyright {
+    color: var(--txt-col-light);
+  }

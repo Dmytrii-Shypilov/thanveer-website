@@ -1,16 +1,29 @@
 import type { Metadata } from "next";
-import {  DM_Serif_Text, } from "next/font/google";
+import {   Mea_Culpa, Waterfall, Roboto } from "next/font/google";
 import "./globals.scss";
 
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
-const serifText = DM_Serif_Text({
+const roboto = Roboto({
  weight: ['400'],
- subsets: ['latin']
+ subsets: ['latin'],
+ variable: '--roboto'
 });
 
-// const geistMono = Geist_Mono({
+const waterfall = Waterfall({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--waterfall'
+ });
+
+const meaCulpa = Mea_Culpa({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--culpa'
+})
+
+
 //   variable: "--font-geist-mono",
 //   subsets: ["latin"],
 // });
@@ -27,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={serifText.className}>
+      <body className={`${roboto.variable} ${meaCulpa.variable} ${waterfall.variable}`}>
         <Header/>
         {children}
         <Footer/>
