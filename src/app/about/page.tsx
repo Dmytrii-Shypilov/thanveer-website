@@ -56,6 +56,7 @@ const AboutPage: React.FC = () => {
                 height="460"
                 alt="thanveer ummer"
                 src="/thanveer-about.png"
+                priority={true}
               />
               <div className={s.name_plate}>
                 <p className={s.name}>THANVEER UMMER</p>

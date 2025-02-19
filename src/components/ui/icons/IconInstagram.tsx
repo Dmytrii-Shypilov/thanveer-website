@@ -7,7 +7,7 @@ function IconInstagram(props: React.SVGProps<SVGSVGElement>) {
       viewBox="0 0 24 24"
       fill="white"
       height="20px"
-      width="auto"
+      width="20px"
       {...props}
     >
       <path d="M11.999 7.377a4.623 4.623 0 100 9.248 4.623 4.623 0 000-9.248zm0 7.627a3.004 3.004 0 110-6.008 3.004 3.004 0 010 6.008z" />
