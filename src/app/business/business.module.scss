@@ -17,7 +17,34 @@
     color: var(--txt-col-light);
     font-size: 30px;
   }
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: var(--txt-col-vlt);
+    text-align: center;
+  }
 
   .section {
     min-height: 100vh;
+    padding: 60px 0px;
+  }
+
+  .company_list {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 150px;
+    transition: scale 300ms;
+  
+    &:hover {
+      scale: 1.05;
+    }
   }
