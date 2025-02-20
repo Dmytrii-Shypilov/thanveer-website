@@ -1,0 +1,52 @@
+
+
+export const GalleryImages = [
+  { id: 1, title: "With my father, HE Ummer Haji Kodakkattu in China" },
+  { id: 2, title: "With HE Minister of Road Transport and Highways of India" },
+  { id: 3, title: "With HE President of Madagascar" },
+  { id: 4, title: "With CellServe (Berlin Charite University) team, Germany" },
+  { id: 5, title: "With HE Minister of National Empowerment, Mauritius" },
+  { id: 6, title: "With HE Chief Minister of Maharashtra, India" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+
+
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+  { id: 2, title: "" },
+
+];
