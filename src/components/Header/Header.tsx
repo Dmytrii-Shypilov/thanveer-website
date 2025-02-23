@@ -72,7 +72,7 @@ const Header: React.FC = () => {
             </ul>
           </nav>
           <span className={s.icon} onClick={() => setIsMenuOpen(true)}>
-            {/* <Icons.IconMenu /> */}
+            <Icons.IconMenu />
           </span>
         </div>
       </Container>

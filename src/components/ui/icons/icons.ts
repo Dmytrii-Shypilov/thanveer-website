@@ -13,6 +13,7 @@ import IconDownload from "./IconDownload";
 import IconLocation from "./IconLocation";
 import IconArrowCircle from "./IconArrowCircle";
 import IconLinkedin from "./IconLinkedin";
+import { IconPointer } from "./IconPointer";
 
 
 
@@ -31,5 +32,6 @@ export const Icons = {
   IconDownload,
   IconLocation,
   IconArrowCircle,
-  IconLinkedin
+  IconLinkedin,
+  IconPointer,
 };

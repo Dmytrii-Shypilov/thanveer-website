@@ -2,10 +2,7 @@ import s from "./page.module.scss";
 import Container from "@/components/Container/Container";
 import Link from "next/link";
 
-
 export default function Home() {
-
-
   return (
     <div className={s.page}>
       <main className={s.main}>
@@ -24,9 +21,12 @@ export default function Home() {
                 </div>
 
                 <h1 className={s.quote}>
-                  Wisdom comes from experience and commitment
+                  Maturity is a result of experience, not age, and experience is
+                  earned through exposure
                 </h1>
-                <Link className={s.link_btn} href='/about'>GET TO KNOW ME</Link>
+                <Link className={s.link_btn} href="/about">
+                  GET TO KNOW ME
+                </Link>
               </div>
               <div className={s.image}></div>
             </div>

@@ -1,3 +1,5 @@
+@import './mixins.module.scss';
+
 .hero {
   background: #0f0c29; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -16,6 +18,11 @@
   width: 100vw;
   height: 100vh;
   font-family: var(--roboto);
+  
+  @include screen-size(mobile) {
+    height: 810px;
+    padding-top: 110px;
+  }
 }
 
 .wrapper {
@@ -25,7 +32,12 @@
   color: white;
   height: 100%;
   width: 100%;
+
+  @include screen-size(mobile) {
+    flex-direction: column;
+  }
 }
+
 .credentials {
   margin-bottom: 20px;
 }
@@ -34,11 +46,18 @@
   margin-bottom: 5px;
   font-size: 32px;
   color: var(--golden);
+  @include screen-size(mobile) {
+    font-size: 25px;
+    text-align: center;
+  }
 }
 
 .positions {
   display: flex;
   align-items: center;
+  @include screen-size(mobile) {
+    justify-content: center;
+  }
 }
 
 .positions_item {
@@ -57,6 +76,21 @@
       background-color: white;
     }
   }
+  @include screen-size(mobile) {
+    font-size: 13px;
+    &:not(:last-of-type) {
+      margin-right: 15px;
+      &::after {
+        position: absolute;
+        right: -8px;
+        top: 1px;
+        content: "";
+        width: 1px;
+        height: 12px;
+        background-color: white;
+      }
+    }
+  }
 }
 
 .quote {
@@ -64,6 +98,13 @@
   margin-bottom: 40px;
   font-size: 60px;
   line-height: 1;
+
+  @include screen-size(mobile) {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
 }
 
 .image {
@@ -80,6 +121,8 @@
 }
 
 .link_btn {
+  display: flex;
+  width: max-content;
   position: relative;
   padding: 12px 20px;
   z-index: 2;
@@ -104,5 +147,10 @@
   transition: opacity 300ms;
   &:hover {
     opacity: 0.8;
+  }
+
+  @include screen-size(mobile) {
+    font-size: 14px;
+    margin: 0 auto;
   }
 }

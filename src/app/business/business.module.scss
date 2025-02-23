@@ -16,17 +16,19 @@
   .title {
     color: var(--txt-col-light);
     font-size: 30px;
+    
   }
   .subtitle {
-    font-size: 20px;
-    margin-bottom: 25px;
+    font-size: 25px;
+    margin-bottom: 30px;
     color: var(--txt-col-vlt);
-    text-align: center;
+    text-align: left;
   }
 
   .section {
     min-height: 100vh;
     padding: 60px 0px;
+ 
   }
 
   .company_list {
@@ -47,4 +49,55 @@
     &:hover {
       scale: 1.05;
     }
+  }
+
+  .roles_block {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 60px;
+  }
+
+  .roles_list {
+    width: max-content;
+    margin-bottom: 40px;
+  }
+
+  .roles_list_item {
+    display: flex;
+    height: 25px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .role {
+    display: flex;
+    align-items: center;
+    // margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--txt-col-vlt);
+    
+  }
+
+.role_name {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 10px;
+line-height: 1;
+}
+
+  .company {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: rgb(82, 80, 80)
+    
+  }
+
+  .signature {
+    font-family: var(--culpa);
+    font-size: 60px;
+    color: var(--txt-col-vlt);
   }

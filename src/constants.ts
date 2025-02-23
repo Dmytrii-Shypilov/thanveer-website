@@ -58,3 +58,23 @@ export const GalleryImages = [
   { id: 51, title: "At my favorite Casela, Mauritius" },
 
 ];
+
+
+export const Roles = [
+  {role: "Director Board Member", company: 'MARIA GROUP INTERNATIONAL'},
+  {role: "CEO", company: 'MGI Consulatncy (MCS), UAE'},
+  {role: "Board Member & Heir", company: 'Kodakkattu Family Office'},
+  {role: "Member of Board of Directors", company: 'MIAOWU Group, China'},
+  {role: "Director Board Member", company: 'Bid Winning Construction Middle East LLC, UAE'},
+  {role: "Director Board Member", company: 'Crystal Group Holdings, UAE'},
+  {role: "Director Board Member", company: 'INNOVETRA Group of Companies , UAE'},
+  {role: "Senior Advisor", company: 'MONACO DIAMOND EXCHANGE, Monaco'},
+  {role: "Senior Advisor", company: 'GENEVA DIAMOND EXCHANGE, Switzerland'},
+  {role: "Senior Advisor", company: 'DIAMOND INVESTMENT CLUB, Hungary'},
+  {role: "Senior Advisor", company: 'Torus Legacy, Brazil'},
+  {role: "Senior Advisor", company: 'Burgschild Holding, Germany'},
+  {role: "Senior Strategic Advisor", company: 'GOAT Cinemas, India'},
+  {role: "Senior Advisor", company: 'OPDA Investments, Portugal'},
+  {role: "Senior Advisor", company: 'Hamed Center Mall, UAE'},
+  {role: "Senior Advisor", company: 'Cell Serve (Berlin Charite University), Germany'},
+]

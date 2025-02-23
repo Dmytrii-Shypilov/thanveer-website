@@ -4,7 +4,18 @@ import Container from "@/components/Container/Container";
 import Image from "next/image";
 import Link from "next/link";
 
+import { Roles } from "@/constants";
+import { Icons } from "@/components/ui/icons/icons";
+
 const BusinessPage: React.FC = () => {
+  const positions = Roles.map((el) => {
+    return (
+      <li className={s.roles_list_item} key={el.company}>
+        <span className={s.role}><Icons.IconPointer/><span className={s.role_name}>{el.role}</span> </span>
+        <span className={s.company}>{el.company}</span>
+      </li>
+    );
+  });
   return (
     <main>
       <section className={s.head}>
@@ -13,7 +24,22 @@ const BusinessPage: React.FC = () => {
       <section className={s.section}>
         <Container>
           <div>
-            <h3 className={s.subtitle}>COMPANIES</h3>
+            <div className={s.roles_block}>
+              <div>
+                <h3 className={s.subtitle}>MY PRESENT ROLES</h3>
+                <ul className={s.roles_list}>{positions}</ul>
+                {/* <span className={s.signature}>Thanveer Ummer</span> */}
+              </div>
+
+              <Image
+                alt="dubai"
+                width={515}
+                height={615}
+                src="/dubai_skyline.webp"
+              />
+            </div>
+
+            {/* <h3 className={s.subtitle}>COMPANIES</h3> */}
             <ul className={s.company_list}>
               <li className={s.companiy_list_item}>
                 <Link className={s.link} href="https://www.mariaintl.com/">
@@ -28,7 +54,10 @@ const BusinessPage: React.FC = () => {
                 <div></div>
               </li>
               <li className={s.companiy_list_item}>
-                <Link className={s.link} href="https://mcs-consultants.vercel.app/">
+                <Link
+                  className={s.link}
+                  href="https://mcs-consultants.vercel.app/"
+                >
                   <Image
                     width={300}
                     height={130}
