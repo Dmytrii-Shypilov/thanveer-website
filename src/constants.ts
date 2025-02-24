@@ -78,3 +78,10 @@ export const Roles = [
   {role: "Senior Advisor", company: 'Hamed Center Mall, UAE'},
   {role: "Senior Advisor", company: 'Cell Serve (Berlin Charite University), Germany'},
 ]
+
+
+export const SocialLinks = {
+  linkedin: 'https://www.linkedin.com/in/thanveerummer/',
+  instagram: 'https://www.instagram.com/tanvitony/',
+  x: 'https://x.com/thanveeru'
+}

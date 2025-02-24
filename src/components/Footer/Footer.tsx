@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Container from "../Container/Container";
 import { Icons } from "../ui/icons/icons";
+import { SocialLinks } from "@/constants";
 
 const Footer: React.FC = () => {
   const path = usePathname();
@@ -24,17 +25,17 @@ const Footer: React.FC = () => {
               <p className={s.text}>REACH ME HERE</p>
               <ul className={s.list_social}>
                 <li className={s.social_item}>
-                  <a className={s.social_link} href="">
+                  <a className={s.social_link} href={SocialLinks.instagram}  target="_blank">
                     <Icons.IconInstagram />
                   </a>
                 </li>
                 <li className={s.social_item}>
-                  <a className={s.social_link} href="">
+                  <a className={s.social_link} href={SocialLinks.x} target="_blank">
                     <Icons.IconTwitter />
                   </a>
                 </li>
                 <li className={s.social_item}>
-                  <a className={s.social_link} href="">
+                  <a className={s.social_link} href={SocialLinks.linkedin} target="_blank">
                     <Icons.IconLinkedin />
                   </a>
                 </li>

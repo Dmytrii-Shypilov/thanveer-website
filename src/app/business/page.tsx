@@ -3,6 +3,7 @@ import s from "./business.module.scss";
 import Container from "@/components/Container/Container";
 import Image from "next/image";
 import Link from "next/link";
+import Transition from "@/components/ui/Transition/Transition";
 
 import { Roles } from "@/constants";
 import { Icons } from "@/components/ui/icons/icons";
@@ -25,12 +26,14 @@ const BusinessPage: React.FC = () => {
         <Container>
           <div className={s.wrapper}>
             <div className={s.roles_block}>
+            <Transition as="div" animate="opacity" duration={0.9}>
               <div>
                 <h3 className={s.subtitle}>MY PRESENT ROLES</h3>
                 <ul className={s.roles_list}>{positions}</ul>
-                {/* <span className={s.signature}>Thanveer Ummer</span> */}
               </div>
+              </Transition>
 
+              <Transition as="div" animate="opacity" duration={0.9}>
               <Image
                 className={s.image}
                 alt="dubai"
@@ -38,11 +41,14 @@ const BusinessPage: React.FC = () => {
                 height={615}
                 src="/dubai_skyline.webp"
               />
+              </Transition>
             </div>
 
-            {/* <h3 className={s.subtitle}>COMPANIES</h3> */}
+          
             <ul className={s.company_list}>
+            <Transition as="div" animate="up" duration={0.5}>
               <li className={s.companiy_list_item}>
+             
                 <Link className={s.link} href="https://www.mariaintl.com/">
                   <Image
                     width={300}
@@ -51,9 +57,11 @@ const BusinessPage: React.FC = () => {
                     alt="Maria Group International, Dubai"
                   />
                 </Link>
-
-                <div></div>
+             
+               
               </li>
+              </Transition>
+              <Transition as="div" animate="up" duration={0.5}>
               <li className={s.companiy_list_item}>
                 <Link
                   className={s.link}
@@ -68,6 +76,7 @@ const BusinessPage: React.FC = () => {
                   />
                 </Link>
               </li>
+              </Transition>
             </ul>
           </div>
         </Container>

@@ -3,13 +3,12 @@
 import s from "./header.module.scss";
 
 import Link from "next/link";
-// import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
-
 import Container from "../Container/Container";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import { Icons } from "../ui/icons/icons";
+import { SocialLinks } from "@/constants";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -35,17 +34,17 @@ const Header: React.FC = () => {
             )}
             <ul className={s.list_social}>
               <li className={s.social_item}>
-                <a className={s.social_link} href="">
+                <a className={s.social_link} href={SocialLinks.instagram} target="_blank">
                   <Icons.IconInstagram />
                 </a>
               </li>
               <li className={s.social_item}>
-                <a className={s.social_link} href="">
+                <a className={s.social_link}  href={SocialLinks.x} target="_blank">
                   <Icons.IconTwitter />
                 </a>
               </li>
               <li className={s.social_item}>
-                <a className={s.social_link} href="">
+                <a className={s.social_link} href={SocialLinks.linkedin} target="_blank">
                   <Icons.IconLinkedin />
                 </a>
               </li>

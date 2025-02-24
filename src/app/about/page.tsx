@@ -2,6 +2,7 @@ import s from "./about.module.scss";
 
 import Container from "@/components/Container/Container";
 import Image from "next/image";
+import Transition from "@/components/ui/Transition/Transition";
 
 const AboutPage: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const AboutPage: React.FC = () => {
       <section className={s.about_section}>
         <Container>
           <div className={s.about_block}>
+          <Transition as="div" animate="opacity" duration={0.9}>
             <div className={s.text_block}>
               <p className={s.text}>
                 A highly driven and accomplished business professional with over
@@ -50,6 +52,8 @@ const AboutPage: React.FC = () => {
                 South Asian languages.
               </p>
             </div>
+            </Transition>
+            <Transition as="div" animate="opacity" duration={0.9}>
             <div>
               <Image
               className={s.image}
@@ -66,6 +70,7 @@ const AboutPage: React.FC = () => {
                 </p>
               </div>
             </div>
+            </Transition>
           </div>
         </Container>
       </section>
