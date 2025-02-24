@@ -1,3 +1,5 @@
+@import '../mixins.module.scss';
+
 .head {
   display: flex;
   justify-content: center;
@@ -11,11 +13,20 @@
     #0f0c29
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+  @include screen-size(mobile) {
+    height: 150px;
+    padding-top: 50px;
+  }
 }
 
 .title {
   color: var(--txt-col-light);
   font-size: 30px;
+
+  @include screen-size(mobile) {
+    font-size: 25px;
+  }
 }
 
 .about_section {
@@ -25,10 +36,26 @@
 .about_block {
     display: flex;
     justify-content: space-between;
+
+    @include screen-size(mobile) {
+      flex-direction: column-reverse;
+    }
+}
+
+.image {
+ @include screen-size(mobile) {
+  width: 100%;
+  height: auto;
+ }
 }
 
 .text_block {
     width: 600px;
+    
+    @include screen-size(mobile) {
+      width: 100%;
+      margin-top: 25px;
+    }
 }
 
 .text {
@@ -36,8 +63,14 @@
   text-align: left;
   &:not(:last-of-type) {
     margin-bottom: 10px;
+   
+  }
+
+  @include screen-size(mobile) {
+    font-size: 16px;
   }
 }
+
 .name_plate {
     margin-top: 20px;
     padding: 15px;
@@ -49,6 +82,10 @@
       #0f0c29
     ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+    @include screen-size(mobile) {
+      margin-top: 10px;
+    }
 }
 
 .name {
@@ -56,9 +93,15 @@
     font-size: 20px;
     font-weight: 700;
     color: var(--golden);
+    @include screen-size(mobile) {
+      font-size: 16px;
+    }
 }
 .position {
     font-size: 18px;
     color: var(--txt-col-light);
+    @include screen-size(mobile) {
+      font-size: 12px;
+    }
 
 }

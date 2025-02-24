@@ -41,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} ${meaCulpa.variable} ${waterfall.variable}`}>
+        <div id="modal-root"></div>
         <Header/>
         {children}
         <Footer/>

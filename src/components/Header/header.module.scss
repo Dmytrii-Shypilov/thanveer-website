@@ -32,6 +32,9 @@
   &:hover {
     opacity: 0.8;
   }
+  @include screen-size(mobile) {
+   font-size: 15px;
+  }
 }
 
 .nav {
@@ -113,12 +116,16 @@
 .list_social {
   display: flex;
   align-items: center;
+
 }
 
 .social_item {
   height: 100%;
   &:not(:last-of-type) {
     margin-right: 30px;
+    @include screen-size(mobile) {
+      margin-right: 10px;
+    }
   }
 }
 

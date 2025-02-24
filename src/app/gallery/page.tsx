@@ -9,6 +9,7 @@ const GalleryPage: React.FC = () => {
     return (
       <li key={el.id} className={s.list_item}>
         <Image
+        className={s.image}
           width="345"
           height="260"
           alt={"Thanveer Ummer " + el.title}

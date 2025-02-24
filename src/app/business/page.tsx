@@ -11,7 +11,7 @@ const BusinessPage: React.FC = () => {
   const positions = Roles.map((el) => {
     return (
       <li className={s.roles_list_item} key={el.company}>
-        <span className={s.role}><Icons.IconPointer/><span className={s.role_name}>{el.role}</span> </span>
+        <div className={s.role}><Icons.IconPointer className={s.icon}/><span className={s.role_name}>{el.role}</span> </div>
         <span className={s.company}>{el.company}</span>
       </li>
     );
@@ -23,7 +23,7 @@ const BusinessPage: React.FC = () => {
       </section>
       <section className={s.section}>
         <Container>
-          <div>
+          <div className={s.wrapper}>
             <div className={s.roles_block}>
               <div>
                 <h3 className={s.subtitle}>MY PRESENT ROLES</h3>
@@ -32,6 +32,7 @@ const BusinessPage: React.FC = () => {
               </div>
 
               <Image
+                className={s.image}
                 alt="dubai"
                 width={515}
                 height={615}
@@ -59,14 +60,13 @@ const BusinessPage: React.FC = () => {
                   href="https://mcs-consultants.vercel.app/"
                 >
                   <Image
+                  className={s.logo_image}
                     width={300}
                     height={130}
                     src="/mcs-logo.svg"
                     alt="MCS MGI Consulting Services, Dubai"
                   />
                 </Link>
-
-                <div></div>
               </li>
             </ul>
           </div>

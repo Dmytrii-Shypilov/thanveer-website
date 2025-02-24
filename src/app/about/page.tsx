@@ -52,6 +52,7 @@ const AboutPage: React.FC = () => {
             </div>
             <div>
               <Image
+              className={s.image}
                 width="500"
                 height="460"
                 alt="thanveer ummer"

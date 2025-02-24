@@ -6,7 +6,7 @@ import { createPortal } from "react-dom";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// import { Icons } from "../ui/icons/icons";
+import { Icons } from "../ui/icons/icons";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 
 type MenuProps = {
@@ -66,14 +66,22 @@ const MobileMenu: React.FC<MenuProps> = ({ closeMenu, router, isMenuOpen, path }
             className={s.menu}
           >
             <span className={s.closeBtn} onClick={closeMenu}>
-              
+              <Icons.IconClose/>
             </span>
 
             <nav className={s.nav}>
               <ul className={s.nav_list}>
                 <li className={s.nav_list_item}>
                   <span className={getClass('/')} onClick={() => navigateTo("/")}>
-                    Home
+                    HOME
+                  </span>
+                </li>
+                <li className={s.nav_list_item}>
+                  <span
+                    className={getClass('/about')}
+                    onClick={() => navigateTo("/about")}
+                  >
+                    ABOUT ME
                   </span>
                 </li>
                 <li className={s.nav_list_item}>
@@ -81,15 +89,15 @@ const MobileMenu: React.FC<MenuProps> = ({ closeMenu, router, isMenuOpen, path }
                     className={getClass('/business')}
                     onClick={() => navigateTo("/business")}
                   >
-                    Our business
+                    BUSINESS
                   </span>
                 </li>
                 <li className={s.nav_list_item}>
                   <span
-                    className={getClass('/contact')}
-                    onClick={() => navigateTo("/contact")}
+                    className={getClass('/gallery')}
+                    onClick={() => navigateTo("/gallery")}
                   >
-                    Contact us
+                    GALLERY
                   </span>
                 </li>
               </ul>
